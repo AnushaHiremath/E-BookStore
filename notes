@@ -1,0 +1,43 @@
+npm init -y
+npm install express
+npm install mongoose
+
+setup db and routes
+
+ setup user model
+
+Inbuilt validation for the fields username and password
+
+validation for checking of the email format
+
+validator package 
+npm install validator
+custom validation for email field
+email format validation
+
+users controller register action
+In postman check localhost://3080/users/register
+
+Encrypt the users password before saving the record into the database
+Package used: bcryptjs
+npm install bcryptjs
+
+setup user login functionality
+In postman check localhost://3080/users/login
+
+How we can compare the plain text password the user is provided at the time of logging in with that of the encrypted password stored within the database
+bcryptjs.compare()
+In postman check localhost://3080/users/login 
+
+Generate Token
+npm install jsonwebtoken
+
+jwt-verify
+  Different ways of verifying a token:
+    1.if the signature provided is wrong there is an error called invalid signature
+    2.if the token is manipulated there is an error called invalid token
+    3.if there is no token provided there is an error called jwt must be provided
+    4.if the token is expired there is an error called jwt expired
+
+Authenticate express middleware
+  =>check the user account
